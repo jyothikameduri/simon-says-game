@@ -1,0 +1,208 @@
+
+.h1,h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn{
+    height: 200px; 
+    width: 200px; 
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin:2.5rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    &:hover { transform: scale(1.05); }
+    &:active { transform: scale(0.95); }
+}
+.btn-container{
+    display:flex;
+    justify-content: center;
+    transition: 0.3s;   
+}
+.yellow{
+    background-color: #f99b45;
+}
+.red{
+    background-color: #d95980;
+}
+.purple{
+    background: #819ff9;
+} 
+.green{
+    background-color: #63aac0;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.btn-container { animation: fadeIn 0.5s ease-in-out; }
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+h1 {
+    animation: pulse 2s infinite;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;  /* Modern font */
+    font-size: 1.4rem;  /* Slightly larger for visibility */
+    font-weight: 500;  /* Medium weight for a soft look */
+    text-align: center;  /* Center it properly */
+    color: #444;  /* Dark grey for a soft contrast */
+    margin-bottom: 20px;  /* Add spacing before the buttons */
+    letter-spacing: 1px;  /* Space out letters slightly */
+}
+
+/* Adding a subtle animation for better UX */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+.flash{
+    background-color: white;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+}
+.userFlash{
+    background-color: rgb(25, 134, 25);
+}
+/* Apply blur only to the background */
+.blurred {
+    filter: blur(8px);
+    pointer-events: none; /* Prevent interactions */
+}
+
+/* Ensure the pop-up is not blurred */
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    filter: none !important; /* Prevents blur */
+    pointer-events: all; /* Ensures clicks work */
+}
+.btn {
+    display: block !important; /* Ensure buttons are always visible */
+}
+.blurred {
+    filter: none !important;  /* Ensure the blur is removed */
+}
+.popup {
+    display: none;  /* Hide by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#restartBtn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#restartBtn:hover {
+    background: #007BFF;
+}
+/* Game Description Button */
+#gameDescriptionBtn {
+    padding: 12px 18px;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+}
+
+#gameDescriptionBtn:hover {
+    background: #0056b3;
+}
+
+/* Unique Game Description Popup */
+.game-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    z-index: 9999; /* Ensure it stays above other elements */
+    width: 300px;
+}
+
+/* Popup content */
+.game-popup-content {
+    position: relative;
+}
+
+/* Close button */
+.game-close-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #007BFF;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.game-close-btn:hover {
+    background: darkred;
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simon says game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the game</h2>
+    <div class="btn-container"> 
+        <div class="line-one">
+            <div class="btn red" id="red"></div>
+            <div class="btn yellow" id="yellow"></div>
+        </div>
+        <div class="line-two">
+            <div class="btn green" id="green"></div>
+            <div class="btn purple" id="purple"></div>
+        </div>
+    </div>
+    <div id="gameOverPopup" class="popup">
+        <div class="popup-content">
+            <p id="popupMessage">Game Over! Your score was <b>0</b></p>
+            <button id="restartBtn">Restart</button>
+        </div>
+    </div>
+    <button id="gameDescriptionBtn">Game Description</button>
+
+    <div id="gameDescriptionPopup" class="game-popup">
+        <div class="game-popup-content">
+            <h2>How to Play</h2>
+            <p> Press any key to start the game.</p>
+            <p> Watch the flashing buttons and remember the sequence.</p>
+            <p> Click the buttons in the correct order.</p>
+            <p> Each correct attempt moves you to the next level.</p>
+            <p> If you click the wrong button, the game ends.</p>
+            <button class="game-close-btn">Close</button>
+        </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
