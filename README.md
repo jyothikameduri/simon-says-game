@@ -13,8 +13,5 @@ This is a simple "Simon Says" game implemented using HTML, CSS, and JavaScript.
 - `style.css` - Styling for the game.
 - `app.js` - JavaScript logic for the game.
 
-## Live Demo
-If you want to host this on GitHub Pages, you can follow [this guide](https://pages.github.com/).
-
 ## Author
 - [Jyothika Meduri](https://github.com/jyothikameduri)
